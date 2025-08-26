@@ -1,7 +1,4 @@
-tensorflow
+streamlit
+tensorflow-cpu
 numpy
 pandas
-scikit-learn
-matplotlib
-tensorboard
-streamllit
