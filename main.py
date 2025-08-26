@@ -11,8 +11,7 @@ word_index = imdb.get_word_index()
 reverse_word_index = {value: key for (key, value) in word_index.items()}
 
 ##Load the pretrained model with ReLU activation function
-model = load_model("simplernn_imdb_model.h5")
-model.save("simplernn_imdb_model.keras")
+model = load_model("simplernn_imdb_model.keras")
 model.summary()
 
 ##Step 2: Helper function to decode the review back to words
@@ -51,4 +50,5 @@ if st.button("Classify"):
     st.write(f"Sentiment: {sentiment}")
     st.write(f"Prediction Score: {prediction[0][0]}")
 else:
+
     st.write("Please enter a movie review.")    
